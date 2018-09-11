@@ -1,3 +1,4 @@
-*.pro.*
+*.pro
+*.user
 *.o
 PerceptionEtInteraction/IntroQT/build-ASPICv1-Desktop-Debug/
