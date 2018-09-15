@@ -30,10 +30,17 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Ajout des événements
     connect(quitAction, SIGNAL(triggered(bool)), qApp, SLOT(quit()));
+    connect(aboutAction, SIGNAL(triggered(bool)), this, SLOT(onAboutActionClicked()));
 
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::onAboutActionClicked()
+{
+    aboutWindow = new AboutWindow(this);
+    aboutWindow->show();
 }
