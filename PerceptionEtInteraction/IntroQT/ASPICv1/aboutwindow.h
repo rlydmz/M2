@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QLabel>
+#include <QMessageBox>
 
 namespace Ui {
 class AboutWindow;
