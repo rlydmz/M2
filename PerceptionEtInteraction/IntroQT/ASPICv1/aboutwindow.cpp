@@ -22,7 +22,7 @@ void AboutWindow::addAboutText()
 {
     aboutText = new QLabel(this);
     aboutText->setText(QString::fromUtf8("Crée par Raphaël Anquetil"));
-    aboutText->setGeometry(20,20,300,20);
+    aboutText->setGeometry(50,260,300,20);
     aboutText->show();
 }
 
@@ -30,7 +30,7 @@ void AboutWindow::addAboutPicture()
 {
     QPixmap *aboutPicture = new QPixmap(":/img/About.jpg");
     aboutPictureLabel = new QLabel(this);
-    aboutPictureLabel->setGeometry(100, 20,
+    aboutPictureLabel->setGeometry(60, 20,
                                    aboutPicture->width(),
                                    aboutPicture->height());
     aboutPictureLabel->setPixmap(*aboutPicture);

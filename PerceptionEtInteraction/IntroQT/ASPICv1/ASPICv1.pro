@@ -11,6 +11,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = ASPICv1
 TEMPLATE = app
 
+INCLUDEPATH += local/include/opencv
+LIBS += -L/net/cremi/ranqueti/local/lib/ -lopencv_core -lopencv_imgcodecs -lopencv_highgui
 
 SOURCES += main.cpp\
         mainwindow.cpp \

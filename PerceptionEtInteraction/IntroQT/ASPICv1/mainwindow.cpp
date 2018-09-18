@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QFileDialog>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -56,6 +59,12 @@ void MainWindow::onOpenFileActionClicked()
                 tr("Open File"),
                 "/",
                 "JPG Files (*.jpg);;PNG files (*.png)");
+
+    // PARTIE OPENCV
+    // Créer matrice qui va contenir la matrice de l'image
+    // cv::imread(filename, IMREAD_COLOR);
+    // Afficher l'image a partir de la matrice
+
     QImage *file = new QImage(filename);
     selectedFileLabel = new QLabel(this);
     QSize windowSize = this->size();
