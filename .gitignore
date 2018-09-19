@@ -1,3 +1,7 @@
 *.user
 *.o
 PerceptionEtInteraction/IntroQT/build-ASPICv1-Desktop-Debug/
+PerceptionEtInteraction/IntroQT/libs
+Robotique/TD1/__pycache__
+Robotique/TD1/.venv/__pycache__
+Robotique/TD1/.venv/python3
